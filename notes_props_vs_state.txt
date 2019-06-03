@@ -1,0 +1,13 @@
+PROPS VS. STATE
+
+props flow from parents to children, not the other way around
+
+both props and state:
+-are objects (this.props, this.state)
+-can be used when rendering
+-cause re-rendering when changed
+
+BUT
+-changes to PROPS are made from ABOVE, while changes to STATE happen within the component
+-to reiterate: props CANNOT be changed by the component itself, but state can
+    -so to change the props, you'll need to have a function at the highest level of the component. bind it properly and give it to a child component as a prop, then call it from the child. The change to the props then trickles down into the child component and gets stuff re-rendered.

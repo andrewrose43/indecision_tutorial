@@ -1,0 +1,30 @@
+How does component state fit in?
+
+Let's think about counter-example.js
+How would we do that in React w/ component state?
+
+Step 1: Set up default state object (w/ default values)
+
+{
+    count: 0
+}
+
+2. Render component with default state values
+then call render() and the app shows up. the state is raided to fill the app with data
+
+say you click the +1 button
+handleAddOne(){
+    //add 1 to count
+}
+
+so now the state has changed.
+
+3. Change state based on event
+
+4. Re-render the app with the new state values
+*the React component API sees this change and updates the app automatically
+
+5. Start again at 3
+
+let's do away with manually rerendering stuff!
+

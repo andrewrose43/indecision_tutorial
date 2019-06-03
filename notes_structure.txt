@@ -1,0 +1,1 @@
+- The app.js in /scripts/ is Babel's auto-generated output. The app.js in /src/ is the actual app as we wrote it.
